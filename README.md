@@ -13,8 +13,14 @@ this the 5th project in udacity nanodegree and it is aboutfinding main points in
 open `index.html`
 ## References 
 https://developers.google.com/maps/documentation/javascript/tutorial
+
 https://www.w3schools.com/w3css/w3css_sidebar.asp
+
 https://knockoutjs.com/documentation/introduction.html
+
 https://developer.foursquare.com/
+
 https://api.jquery.com/jquery.getjson/
+
 https://www.w3schools.com/jsref/event_onerror.asp
+

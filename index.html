@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<head>
+    <title>Neighbourhood Map</title>
+</head>
+<body class="w3-black ">
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-black " style="display:block;width: 25%;" id="mySidebar">
+    <button class=" w3-button w3-large"
+            onclick="w3_close()"> &#9776;
+    </button>
+
+    <h1>Neighborhood Map</h1>
+
+
+    <!--<form class="search-bar" style="margin:auto;max-width:300px;border-radius: 2px;">
+
+
+        <input  type="text" placeholder="Search.." name="searchBar">
+        <button data-bind="click: function(data, event) { filter('param1', 'param2', data, event) }" ><i class="fas fa-filter"></i> filter</button>
+    </form>-->
+    <div style="text-align: center">
+        <input style="width: 87%" placeholder="Search…" type="search" id="search"
+               data-bind="textInput: query, valueUpdate: 'afterkeydown'" autocomplete="off">
+    </div>
+
+    <ul data-bind="foreach:locations">
+        <li class="w3-bar-item w3-button" data-bind="text:title"></li>
+    </ul>
+    <input id="show-listings" type="button" value="Show Listings">
+    <input id="hide-listings" type="button" value="Hide Listings">
+
+
+</div>
+<div id="main">
+
+    <div class="w3-camo-dark-grey">
+        <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776;</button>
+    </div>
+
+
+    <div id="map"></div>
+</div>
+<script src="js/main.js"></script>
+<!--<script src="js/map.js"></script>-->
+<script src="js/lib/knockout-3.4.2.js"></script>
+<script src="js/app.js"></script>
+<script src="js/locations.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQpqAnReXNwNf-mqLycl6ep-umkRBOMPQ&v=3&callback=startUp">
+</script>
+</body>
+</html>
